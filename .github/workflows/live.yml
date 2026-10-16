@@ -1,4 +1,4 @@
-on: { push: {}, pull_request: {}, workflow_dispatch: { inputs: { sha: { required: true } } } }
+on: { push: { branches-ignore: ["try/**"] }, pull_request: {}, workflow_dispatch: { inputs: { sha: { required: true } } } }
 permissions: { contents: write, statuses: write, pull-requests: write }
 jobs: { live: { runs-on: ubuntu-latest, steps: [ uses: actions/checkout@v4, { uses: fitzyracing1/commit-live@v1, with: {
   mode: "${{ github.event_name == 'workflow_dispatch' && 'go-live' || 'check' }}", sha: "${{ inputs.sha }}",

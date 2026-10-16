@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>commit-live light</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>commit-live light</h1>
+        <p class="pitch">Lit or dark light per commit, and one-click go live only for lit commits.</p>
+      </header>
+
+      <section class="status">
+        <!-- This page is only built when npm test passes, so any copy you can see is lit. -->
+        <div class="badge"><span class="dot"></span> lit</div>
+        <dl>
+          <dt>Commit</dt>
+          <dd><code id="sha">a682fc2ad8b24f27ac43f325c447dc7902d3f30d</code></dd>
+          <dt>Preview</dt>
+          <dd><a id="preview" href="https://fitzyracing1.github.io/commit-live-demo/c/a682fc2ad8b24f27ac43f325c447dc7902d3f30d/">/c/a682fc2ad8b24f27ac43f325c447dc7902d3f30d/</a></dd>
+        </dl>
+        <p id="version">Version 3</p>
+      </section>
+
+      <section>
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li><strong>Push.</strong> Every commit runs your tests.</li>
+          <li><strong>Light.</strong> The commit gets a light: lit or dark. Lit commits get a preview at <code>/c/&lt;sha&gt;/</code>.</li>
+          <li><strong>Go live.</strong> One click puts a lit commit on the live site. Dark commits can't go live.</li>
+        </ol>
+      </section>
+
+      <nav class="links">
+        <a href="https://github.com/apps/commit-live-light">Install the App</a>
+        <a href="https://github.com/marketplace/actions/commit-live-light">Use the Action</a>
+        <a href="https://fitzyracing1.github.io/commit-live/">Read the docs</a>
+      </nav>
+    </main>
+  </body>
+</html>

@@ -5,5 +5,9 @@
   "scripts": {
     "test": "node test.mjs",
     "build": "node build.mjs"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/fitzyracing1"
   }
 }
